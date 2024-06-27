@@ -11,7 +11,7 @@ use yii\web\Controller;
  */
 class TimelineEventController extends Controller
 {
-    public $layout = 'common';
+    public $layout = 'new/common';
 
     /**
      * Lists all TimelineEvent models.

@@ -6,10 +6,9 @@
  * @var string $content
  */
 ?>
-<?php $this->beginContent('@backend/views/layouts/common.php'); ?>
-    <div class="box">
-        <div class="box-body">
-            <?php echo $content ?>
-        </div>
-    </div>
+
+<?php $this->beginContent('@backend/views/layouts/new/common.php'); ?>
+    
+    <?php echo $content ?>
+
 <?php $this->endContent(); ?>

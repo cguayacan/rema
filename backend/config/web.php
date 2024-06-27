@@ -2,7 +2,8 @@
 $config = [
     'homeUrl' => Yii::getAlias('@backendUrl'),
     'controllerNamespace' => 'backend\controllers',
-    'defaultRoute' => 'timeline-event/index',
+    'defaultRoute' => 'gerencial-dashboard/index',
+//    'defaultRoute' => 'timeline-event/index',
     'components' => [
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -74,6 +75,11 @@ $config = [
             [
                 'controllers' => ['user'],
                 'allow' => false,
+            ],
+            [
+                'controllers' => ['gerencial-dashboard'],
+                'allow' => true,
+                'actions' => ['index'],
             ],
             [
                 'allow' => true,
